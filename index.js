@@ -4,10 +4,12 @@ import { executeDay3 } from "./src/day-3.js";
 import { executeDay4 } from "./src/day-4.js";
 import { executeDay5 } from "./src/day-5.js";
 import { executeDay6 } from "./src/day-6.js";
+import { executeDay7 } from "./src/day-7.js";
 
 // executeDay1();
 // executeDay2();
 // executeDay3();
 // executeDay4();
 // executeDay5();
-executeDay6();
+// executeDay6();
+executeDay7();

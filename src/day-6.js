@@ -348,6 +348,8 @@ export function executeDay6() {
 }
 
 function countLoops(input) {
+  const currentPositionCoordinates = getCurrentPosition(input);
+
   let count = 0;
   for (let i = 0; i < input.length; i++) {
     for (let j = 0; j < input[i].length; j++) {
@@ -358,7 +360,7 @@ function countLoops(input) {
 
       const copy = JSON.parse(JSON.stringify(input));
       copy[i][j] = '#';
-      const loopFound = simulateGuardianMovesPart2(copy);
+      const loopFound = simulateGuardianMovesPart2(copy, currentPositionCoordinates);
       if (loopFound) {
         count++;
       }
@@ -368,8 +370,8 @@ function countLoops(input) {
   return count;
 }
 
-function simulateGuardianMovesPart2(input) {
-  let [row, col] = getCurrentPosition(input);
+function simulateGuardianMovesPart2(input, currentPositionCoordinates) {
+  let [row, col] = currentPositionCoordinates;
   let direction = input[row][col];
   let isLoop = false;
   let startingPoint = [row, col].join(',');
