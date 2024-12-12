@@ -8,6 +8,7 @@ import { executeDay7 } from "./src/day-7.js";
 import { executeDay8 } from "./src/day-8.js";
 import { executeDay9 } from "./src/day-9.js";
 import { executeDay10 } from "./src/day-10.js";
+import { executeDay11 } from "./src/day-11.js";
 
 // executeDay1();
 // executeDay2();
@@ -18,4 +19,5 @@ import { executeDay10 } from "./src/day-10.js";
 // executeDay7();
 // executeDay8();
 // executeDay9();
-executeDay10();
+// executeDay10();
+executeDay11();
